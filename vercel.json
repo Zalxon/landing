@@ -1,0 +1,118 @@
+{
+  "rewrites": [
+    {
+      "source": "/research/cdr-verification-explainer",
+      "destination": "https://research.carbonplan.org/research/cdr-verification-explainer"
+    },
+    {
+      "source": "/research/cdr-verification(.*)",
+      "destination": "https://cdr-verification.carbonplan.org/research/cdr-verification$1"
+    },
+    {
+      "source": "/research/cmip6-downscaling",
+      "destination": "https://cmip6-downscaling.carbonplan.org/research/cmip6-downscaling"
+    },
+    {
+      "source": "/research/cdr-database(.*)",
+      "destination": "https://cdr-database.carbonplan.org/research/cdr-database$1"
+    },
+    {
+      "source": "/research/compliance-users(.*)",
+      "destination": "https://compliance-users.carbonplan.org/research/compliance-users$1"
+    },
+    {
+      "source": "/research/forest-risks",
+      "destination": "https://forest-risks.carbonplan.org/research/forest-risks"
+    },
+    {
+      "source": "/research/forest-carbon",
+      "destination": "https://forest-carbon.carbonplan.org/research/forest-carbon"
+    },
+    {
+      "source": "/research/forest-offsets",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets"
+    },
+    {
+      "source": "/research/forest-offsets-crediting(.*)",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-crediting$1"
+    },
+    {
+      "source": "/research/forest-offsets-fires-2021(.*)",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires-2021$1"
+    },
+    {
+      "source": "/research/forest-offsets-fires(.*)",
+      "destination": "https://forest-offsets.carbonplan.org/research/forest-offsets-fires$1"
+    },
+    {
+      "source": "/research/seaweed-farming/embed",
+      "destination": "https://seaweed-farming.carbonplan.org/research/seaweed-farming/embed"
+    },
+    {
+      "source": "/research/seaweed-farming",
+      "destination": "https://seaweed-farming.carbonplan.org/research/seaweed-farming"
+    },
+    {
+      "source": "/research/carbon-removal-application(.*)",
+      "destination": "https://carbon-removal-application.carbonplan.org/research/carbon-removal-application$1"
+    },
+    {
+      "source": "/research(.*)",
+      "destination": "https://research.carbonplan.org/research$1"
+    },
+    {
+      "source": "/blog(.*)",
+      "destination": "https://blog.carbonplan.org/blog$1"
+    },
+    {
+      "source": "/embed/offset-fires(.*)",
+      "destination": "https://offset-fires-embed.carbonplan.org/embed/offset-fires$1"
+    },
+    {
+      "source": "/data(.*)",
+      "destination": "https://data.carbonplan.org/data$1"
+    },
+    {
+      "source": "/design(.*)",
+      "destination": "https://design.carbonplan.org/design$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/research/stripe-reports-insights",
+      "destination": "https://carbonplan.org/research/stripe-2020-insights"
+    },
+    {
+      "source": "/jobs",
+      "destination": "https://apply.workable.com/carbonplan/"
+    },
+    {
+      "source": "/research/forest-offsets-map",
+      "destination": "https://carbonplan.org/research/forest-offsets-crediting"
+    },
+    {
+      "source": "/reports/methods",
+      "destination": "https://carbonplan.org/research/cdr-database/methods"
+    },
+    {
+      "source": "/reports",
+      "destination": "https://carbonplan.org/research/cdr-database"
+    },
+    {
+      "source": "/blog/scoping-plan-comments",
+      "destination": "https://carbonplan.org/research/scoping-plan-comments"
+    },
+    {
+      "source": "/blog/offset-disclosure-needs",
+      "destination": "https://carbonplan.org/research/offset-disclosure-needs"
+    },
+    {
+      "source": "/blog/ton-year-ncx",
+      "destination": "https://carbonplan.org/research/ton-year-ncx"
+    },
+    {
+      "source": "/blog/climate-financial-risks",
+      "destination": "https://carbonplan.org/research/climate-financial-risks"
+    }
+  ]
+}
