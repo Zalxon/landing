@@ -133,7 +133,7 @@ const Index = () => {
     </Column>
   </Row>
   <Highlight research={research1} />
-  <Highlight research={research2} />
+  {/* <Highlight research={research2} /> */}
   <Row as='section' sx={{ mt: [5, 6, 7, 8], pb: [1] }}>
     <Column
       start={[1, 1, 2, 2]}

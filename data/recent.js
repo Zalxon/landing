@@ -1,4 +1,26 @@
 const research1 = {
+  id: 'anatomy',
+  date: '01-19-2023',
+  href: '/research/anatomy',
+  title: 'Anatomy',
+  summary:
+    'In order to be able to list it better by extracting the genetic code to the object output.',
+  source: (() => {
+    return (
+      <iframe 
+        id="home-widget" 
+        allowtransparency="true" 
+        widget-src="?m=developer_web/coronary_vessels.json&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false" 
+        ng-class="{disabled: widgetDisabled}"
+        width="100%" height="250" 
+        frameborder="0" 
+        src="https://human.biodigital.com/viewer?m=developer_web/coronary_vessels.json&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false&dk=e6d92924b104d99964ff488a3218136c73234d9e" 
+        class="disabled">
+      </iframe>
+    )
+  })(),
+}
+const research3 = {
   id: 'genome-to-object',
   date: '01-19-2023',
   href: '/research/genome-to-object',
@@ -18,17 +40,21 @@ const research2 = {
 
 const highlights = [
   {
-    label: 'Genome to Object',
-    href: '/research/genome-to-object',
+    label: 'Anatomy',
+    href: '/research/anatomy',
   },
-  {
-    label: 'Genome visualization',
-    href: '/research/genome-visualization',
-  },
-  {
-    label: 'Human anatomy diagram',
-    href: '/research/human-anatomy-diagram',
-  },
+  // {
+  //   label: 'Genome to Object',
+  //   href: '/research/genome-to-object',
+  // },
+  // {
+  //   label: 'Genome visualization',
+  //   href: '/research/genome-visualization',
+  // },
+  // {
+  //   label: 'Human anatomy diagram',
+  //   href: '/research/human-anatomy-diagram',
+  // },
 ]
 
 const press = [
@@ -50,4 +76,4 @@ const press = [
   // },
 ]
 
-export { research1, research2, highlights, press }
+export { research1, research2, research3, highlights, press }

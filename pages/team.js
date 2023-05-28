@@ -47,10 +47,10 @@ const Team = () => {
               }}
             >
               {team
-                .sort((a, b) => a.name.localeCompare(b.name))
+                .sort((a, b) => a.id - b.id)
                 .map((p, i) => (
                   <Person
-                    key={p.name}
+                    key={p.id}
                     name={p.name}
                     role={p.role}
                     bio={p.bio}

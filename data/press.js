@@ -3,26 +3,31 @@ const highlights = [
     source: 'CBS News',
     href: 'https://www.cbs.com/shows/video/M7H_yUdOiUw_E0fW5l_SP_V786PBhjI0/',
     date: '08-13-2022',
+    status: "draf"
   },
   {
     source: 'National Geographic',
     href: 'https://www.nationalgeographic.com/environment/article/forests-as-carbon-offsets-climate-change-has-other-plans',
     date: '05-04-2022',
+    status: "draf"
   },
   {
     source: 'Bloomberg',
     href: 'https://www.bloomberg.com/news/articles/2022-04-07/the-biggest-crypto-effort-to-end-useless-carbon-offsets-is-backfiring?srnd=premium',
     date: '04-07-2022',
+    status: "draf"
   },
   {
     source: 'Los Angeles Times',
     href: 'https://www.latimes.com/politics/story/2021-09-08/what-is-the-california-climate-credit-does-it-cut-pollution',
     date: '09-08-2021',
+    status: "draf"
   },
   {
     source: 'Planet Money',
     href: 'https://www.npr.org/2021/05/07/994774148/emission-impossible',
     date: '05-07-2021',
+    status: "draf"
   },
 ]
 
@@ -34,6 +39,7 @@ const press = [
     authors: ['Ian Morse'],
     date: '05-16-2023',
     format: 'print',
+    status: "draf"
   },
   {
     source: ['Vox'],
@@ -42,6 +48,7 @@ const press = [
     authors: ['Joss Fong'],
     date: '04-06-2023',
     format: 'video',
+    status: "draf"
   },
   {
     source: ['Politico'],
@@ -50,6 +57,7 @@ const press = [
     authors: ['Debra Kahn', 'Allison Prang', 'Jordan Wolman'],
     date: '04-04-2023',
     format: 'print',
+    status: "draf"
   },
   {
     source: ['Grist'],
@@ -59,6 +67,7 @@ const press = [
     authors: ['Emily Pontecorvo'],
     date: '02-28-2023',
     format: 'print',
+    status: "draf"
   },
   {
     source: ['Grist'],
@@ -68,6 +77,7 @@ const press = [
     authors: ['Emily Pontecorvo'],
     date: '02-13-2023',
     format: 'print',
+    status: "draf"
   },
   {
     source: ['Axios'],
@@ -77,6 +87,7 @@ const press = [
     authors: ['Ben Gemen', 'Andrew Freedman'],
     date: '02-10-2023',
     format: 'print',
+    status: "draf"
   },
   {
     source: ['The Seattle Times'],

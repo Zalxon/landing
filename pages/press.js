@@ -186,7 +186,7 @@ const Press = () => {
         <Column start={[1, 1, 2, 2]} width={[5]}>
           <Box sx={sx.highlight}>Press highlights</Box>
         </Column>
-        {highlights.map((d, i) => {
+        {highlights.filter((h) => h?.status === "published").map((d, i) => {
           return (
             <Column
               key={i}
@@ -275,7 +275,7 @@ const Press = () => {
         <Column start={[1, 2, 5, 5]} width={[6, 7, 7, 7]}>
           <Box sx={{ mt: ['-3px', '-3px', '-3px', '0px'], mb: [3, 0, 0, 0] }}>
             <Row columns={[1, 7, 7, 7]}>
-              {filtered.map((d, i) => {
+              {filtered.filter((f) => f?.status === "published").map((d, i) => {
                 return (
                   <Column
                     key={i}
