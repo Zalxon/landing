@@ -2,48 +2,17 @@ import { Box, Image, useColorMode } from 'theme-ui'
 import { Row, Column, Link, Button, formatDate } from '@zalxon/components'
 import { RotatingArrow } from '@zalxon/icons'
 import { useThemeUI } from 'theme-ui';
-import { makeStyles } from '@mui/styles';
 import { useEffect } from 'react';
-import $ from 'jquery';
-
-import { fetchFrame } from "node-iframe";
 
 const highlightImageUrl = (id, mode) => {
   return `https://images.zalxon.com/highlights/${id}-${mode}.png`
 }
 
-const useStyles = makeStyles({
-  root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    border: 0,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-  },
-  iframe: {
-    borderColor: "#000",
-    borderWidth: 0,
-    "& body": {
-      background: "#000",
-    },
-    "& .view-page__logo": {
-      display: "none !important"
-    }
-    
-  }
-});
-
 const Highlight = ({ research, last }) => {
   const [colorMode] = useColorMode();
-  const classes = useStyles();
-
-  console.log("colorMode: ", colorMode)
 
   const theme = useThemeUI();
   let bgColor = theme.colorMode === "dark" ? "27, 30, 35" : "255, 255, 255";
-
 
   useEffect(() => {
 
@@ -108,7 +77,6 @@ const Highlight = ({ research, last }) => {
           {research.source ? (
             <iframe 
               id="home-widget" 
-              className={classes.iframe}
               allowtransparency="true" 
               widget-src="?m=production/maleAdult/dental_cavities.json&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false" 
               // ng-class="{disabled: widgetDisabled}"

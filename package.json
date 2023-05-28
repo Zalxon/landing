@@ -23,7 +23,6 @@
   "homepage": "https://github.com/zalxon/landing#readme",
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
-    "@mui/styles": "^5.13.2",
     "@stripe/stripe-js": "^1.13.2",
     "@theme-ui/color": "^0.15.3",
     "@zalxon/components": "^1.0.3",
