@@ -153,7 +153,7 @@ const Press = () => {
   return (
     <Layout
       links={'homepage'}
-      title={'Press – CarbonPlan'}
+      title={'Press – Zalxon'}
       description={
         'Complete list of press that has either covered our work or featured members of our team.'
       }

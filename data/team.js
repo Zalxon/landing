@@ -22,7 +22,7 @@ const team = [
 ]
 
 const board = [
-  // ['Jeremy Freeman', 'CarbonPlan'],
+  // ['Jeremy Freeman', 'Zalxon'],
   // ['Kelly Gannon', 'NDWA Labs'],
   // ['Gernot Wagner', 'Columbia Business School'],
   // ['Arjuna Dibley', 'University of Melbourne / University of Oxford'],

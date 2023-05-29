@@ -43,23 +43,51 @@ async function checkoutHandler(amount) {
     return { success: false, statusCode: 400, message: 'Invalid amount' }
   }
 
+  // {
+  //   name: 'Donation',
+  //   description: 'Donation to Zalxon',
+  //   amount: amount * 100, // Stripe accepts amount in cents
+  //   currency: CURRENCY,
+  //   quantity: 1,
+  // },
+
   // Create Checkout Sessions from body params.
+  // const params = {
+  //   submit_type: 'donate',
+  //   payment_method_types: ['card'],
+  //   billing_address_collection: 'required',
+  //   line_items: transformedItems,
+  //   success_url: 'https://zalxon.com/thanks',
+  //   cancel_url: 'https://zalxon.com/donate',
+  // }
+
+
+  // Create Checkout Sessions from body params.
+  let product = {
+    name: 'Donation',
+    description: 'Donation to Zalxon',
+    // images: [],
+  }
   const params = {
     submit_type: 'donate',
     payment_method_types: ['card'],
     billing_address_collection: 'required',
-    line_items: [
-      {
-        name: 'Donation',
-        description: 'Donation to CarbonPlan',
-        amount: amount * 100, // Stripe accepts amount in cents
+    line_items: [{
+      // ...product,
+      // amount: amount * 100, // Stripe accepts amount in cents
+      // currency: CURRENCY,
+      price_data: {
         currency: CURRENCY,
-        quantity: 1,
+        unit_amount: amount * 100,
+        product_data: product,
       },
-    ],
-    success_url: 'https://zalxon.com/thanks',
-    cancel_url: 'https://zalxon.com/donate',
-  }
+      quantity: 1,
+    }],
+    mode: 'payment',
+    success_url: `${process.env.BASE_URL}/thanks`,
+    cancel_url: `${process.env.BASE_URL}/donate`,
+  };
+
   const checkoutSession = await stripe.checkout.sessions.create(params)
   return { success: true, checkoutSession }
 }

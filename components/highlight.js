@@ -75,16 +75,36 @@ const Highlight = ({ research, last }) => {
       
         <Column start={[1, 1, 2, 3]} width={[6, 8, 10, 8]}>
           {research.source ? (
-            <iframe 
-              id="home-widget" 
-              allowtransparency="true" 
-              widget-src="?m=production/maleAdult/dental_cavities.json&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false" 
-              // ng-class="{disabled: widgetDisabled}"
-              width="100%" height="250" 
-              frameBorder="0" 
-              src={`https://human.biodigital.com/viewer?m=production/maleAdult/dental_cavities.json&background=${bgColor}&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false&dk=e6d92924b104d99964ff488a3218136c73234d9e`} 
-            >
-           </iframe>
+            <>
+            <div style={{
+              backgroundColor: "#000",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}>
+              <video 
+                class="min-w-full min-h-full object-cover" 
+                preload="auto" 
+                loop=" " 
+                muted=" " 
+                autoplay=" " 
+                height="250" 
+                width={"100%"}
+                src="https://bd-craft-assets-prod.s3.amazonaws.com/assets/biodigital-human-video-sm.mp4" type=" video/mp4">
+              </video>
+            </div>
+            
+              {/* <iframe 
+                id="home-widget" 
+                allowtransparency="true" 
+                widget-src="?m=production/maleAdult/dental_cavities.json&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false" 
+                // ng-class="{disabled: widgetDisabled}"
+                width="100%" height="250" 
+                frameBorder="0" 
+                src={`https://human.biodigital.com/viewer?m=production/maleAdult/dental_cavities.json&background=${bgColor}&bgstd=transparent&ui-annotations=true&ui-panel=false&imageDisplay=fallback&ui-all=false&ui-info=false&dk=e6d92924b104d99964ff488a3218136c73234d9e`} 
+              >
+              </iframe> */}
+           </>
         
           ) : (
             <Link href={research.href}>
@@ -108,11 +128,6 @@ const Highlight = ({ research, last }) => {
               />
             </Link>
           )}
-             {<style>
-             .view-page__logo {
-                "display: none"
-              }
-            </style>}
         </Column>
       </Row>
       <Box sx={{ display: 'block', height: [4, 5, 6, 7] }} />

@@ -35,12 +35,11 @@ const Index = () => {
   return (
     <Layout
     links={'homepage'}
-    title={'Zalxon AI'}
+    title={'Zalxon'}
     description={
-      'Improving the transparency and scientific integrity of healthcare solutions based-ai on open data and tools.'
+      'Improving the transparency and scientific integrity of healthcare solutions based-AI on open data and tools.'
     }
   >
-
   <Box
     sx={{
       mt: [-1, 0, 0, 0],
@@ -91,7 +90,7 @@ const Index = () => {
               mt: [3, 4, 4, 5],
             }}
           >
-            Improving the transparency and scientific integrity of healthcare solutions based-ai on open data and tools
+            Improving the transparency and scientific integrity of healthcare solutions based-AI on open data and tools
           </Box>
         </Column>
       </Row>
@@ -149,7 +148,7 @@ const Index = () => {
               Annual report
             </Box>
             {/* <Button
-              href='https://files.zalxon.ai/CarbonPlan-Annual-Report-2021.pdf'
+              href='https://files.zalxon.ai/Annual-Report-2021.pdf'
               size='md'
               sx={{ mb: [3] }}
               suffix={<RotatingArrow />}

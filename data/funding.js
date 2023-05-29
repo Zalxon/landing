@@ -92,7 +92,7 @@ const projectSpecific = [
   //       Negative Emissions Purchase 2020
   //     </Link>
   //     <br />
-  //     <Link href='https://github.com/carbonplan/carbon-removal-application'>
+  //     <Link href='https://github.com/zalxon/carbon-removal-application'>
   //       Development of carbon removal procurement application
   //     </Link>
   //   </>,

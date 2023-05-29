@@ -283,16 +283,16 @@ const Donate = () => {
       </Row>
       <Row sx={{ mt: [1], mb: [-1] }}>
         <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
-          <Amount value={10} color='red' onClick={onClick} />
+          <Amount value={50} color='red' onClick={onClick} />
         </Column>
         <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
-          <Amount value={50} color='yellow' onClick={onClick} />
+          <Amount value={250} color='yellow' onClick={onClick} />
         </Column>
         <Column start={[1, 2, 4, 4]} width={[3, 3, 3, 3]}>
-          <Amount value={20} color='orange' onClick={onClick} />
+          <Amount value={100} color='orange' onClick={onClick} />
         </Column>
         <Column start={[4, 5, 7, 7]} width={[3, 3, 4, 3]} dr={0.5}>
-          <Amount value={100} color='green' onClick={onClick} />
+          <Amount value={500} color='green' onClick={onClick} />
         </Column>
         <Column start={[1, 2, 4, 4]} width={[6, 5, 5, 5]}>
           <CustomAmount color='teal' onClick={onClick} />

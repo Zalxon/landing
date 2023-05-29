@@ -171,7 +171,7 @@ describe('api/checkout_sessions', () => {
           line_items: [
             {
               name: 'Donation',
-              description: 'Donation to CarbonPlan',
+              description: 'Donation to Zalxon',
               amount: 2000,
               currency: 'usd',
               quantity: 1,

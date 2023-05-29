@@ -4,7 +4,7 @@ const research1 = {
   href: '/research/anatomy',
   title: 'Anatomy',
   summary:
-    'In order to be able to list it better by extracting the genetic code to the object output.',
+    'The Zalxon Anatomy is an interactive 3D tool platform for visualizing anatomy, disease, and treatment.',
   source: (() => {
     return (
       <iframe 
