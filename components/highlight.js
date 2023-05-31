@@ -90,7 +90,7 @@ const Highlight = ({ research, last }) => {
                 autoplay=" " 
                 height="250" 
                 width={"100%"}
-                src="https://bd-craft-assets-prod.s3.amazonaws.com/assets/biodigital-human-video-sm.mp4" type=" video/mp4">
+                src="https://zalxon.s3.us-east-2.amazonaws.com/assets/biodigital-human-video-sm.mp4" type=" video/mp4">
               </video>
             </div>
             
