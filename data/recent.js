@@ -41,7 +41,7 @@ const research2 = {
 const highlights = [
   {
     label: 'Anatomy',
-    href: '/research/anatomy',
+    href: 'https://research.zalxon.com/research/anatomy',
   },
   // {
   //   label: 'Genome to Object',
