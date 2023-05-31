@@ -1,7 +1,7 @@
 const research1 = {
   id: 'anatomy',
   date: '01-19-2023',
-  href: '/research/anatomy',
+  href: 'https://research.zalxon.com/research/anatomy',
   title: 'Anatomy',
   summary:
     'The Zalxon Anatomy is an interactive 3D tool platform for visualizing anatomy, disease, and treatment.',
